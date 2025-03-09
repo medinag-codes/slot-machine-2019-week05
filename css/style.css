@@ -15,6 +15,10 @@ body{
     color: white;
 }
 
+h1{
+    font-size: 4rem;
+    margin: 10px;
+}
 .slotMachineContainer{
     display: flex; 
     flex-direction: column;
@@ -30,6 +34,7 @@ body{
     gap: 10px;
     background-color: white;
     border: 5px solid greenyellow;
+    margin-top: 20px;
 }
 
 .wheel{
@@ -45,6 +50,14 @@ body{
     height: 100px;
     position: absolute;
     transition: transform 0.3s linear;
+}
+
+.betButtons{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 button{
@@ -75,4 +88,5 @@ button:hover{
 .wallet{
     background-color: lightgreen;
     color: black;
+    margin-top: 20px;
 }

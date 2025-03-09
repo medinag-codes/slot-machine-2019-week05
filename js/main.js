@@ -1,6 +1,6 @@
 let min = 5
 let max = 50
-let wallet = 500
+let wallet = 1000
 
 // click eventlisteners
 document.querySelector('#minBet').addEventListener('click',betMin );
@@ -43,85 +43,13 @@ function play(bet){
             alert ("Not Enough Funds")
             return;
         }
-        // if 1 ===2= || 2==3
-                // add to total
-                // UPDATE dom to show new total
-                // say you win
-        // else 
-            //subtract from total
-            // UPDATE dom to show new total
-            // say you lose 
+        
         if(slot1 === slot2 && slot2 === slot3){
             document.getElementById('message').innerText = "You Win!"
-            document.getElementById('wallet').innerText = wallet += bet
+            document.getElementById('wallet').innerText = wallet += (bet * 10)
         }else{ 
             document.getElementById('message').innerText = "You Lost!"
             document.getElementById('wallet').innerText = wallet -= bet
         }
         
 }
-
-
-//     let slot1 =  images[Math.floor(Math.random()* images.length )]
-//     let slot2 = images[Math.floor(Math.random()* images.length)]
-//     let slot3 = images[Math.floor(Math.random()* images.length)]
-//     console.log(slot1, slot2, slot3)
-//     if( wallet < max){
-//         alert ("Not Enough Funds")
-//         return;
-//     }
-//         if(slot1 === slot2 && slot2 === slot3){
-//             document.getElementById('message').innerText = "You Win!"
-//             document.getElementById('wallet').innerText = wallet += max
-//     }else{ 
-//         document.getElementById('message').innerText = "You Lost!"
-//         document.getElementById('wallet').innerText = wallet -= max
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function winBet(){
-//     wallet + wallet * (bet * 2)
-// }
-
-// // Update the wallet
-
-// // when you spin the wheel, a random image will be selected
-// function spinWheel(){
-//     let index = Math.floor(Math.random(4) * images.length)
-// }
-
-// // when you click on the spin button, you start the game
-// function spinButton(){
-//     // check if all the results are the same
-//     if(results[0] === results[1]=== results[2]){
-//         h2.innerText = "You Win!"
-//         wallet += amount
-//     }else h2.innerText = "Try Again!"
-//         wallet -= amount
-// }
-
-
-
